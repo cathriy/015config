@@ -4,6 +4,11 @@ spring:
     url: jdbc:mysql://localhost:3308/smbms?useUnicode=true&charsetEncoding=utf-8
     username: root
     password: root
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     serviceUrl:
