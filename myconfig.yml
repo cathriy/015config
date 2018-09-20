@@ -1,7 +1,7 @@
 spring:
-  datasource:   
+  datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mystore?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/smbms?useUnicode=true&charsetEncoding=utf-8
     username: root
     password: root
 eureka:
@@ -10,6 +10,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 management:
   security:
+    #关闭安全验证，否则访问refresh端点时会提示权限不足
     enabled: false
 
 	  
